@@ -24,9 +24,10 @@ DROP TABLE IF EXISTS `post`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `post` (
   `Post ID` int NOT NULL AUTO_INCREMENT,
-  `Tester ID` int DEFAULT NULL,
+  `Tester Email` varchar(45) DEFAULT NULL,
   `Last Updated` date DEFAULT NULL,
   `Body` varchar(45) DEFAULT NULL,
+  `Location ID` int DEFAULT NULL,
   PRIMARY KEY (`Post ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
