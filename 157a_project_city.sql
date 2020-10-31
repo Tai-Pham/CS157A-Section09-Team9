@@ -16,33 +16,26 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `testing location`
+-- Table structure for table `city`
 --
 
-DROP TABLE IF EXISTS `testing location`;
+DROP TABLE IF EXISTS `city`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `testing location` (
-  `Location ID` int NOT NULL,
-  `Address ID` int DEFAULT NULL,
+CREATE TABLE `city` (
+  `City ID` int NOT NULL,
   `Name` varchar(45) DEFAULT NULL,
-  `Appointments` varchar(45) DEFAULT NULL,
-  `Drive Through` varchar(45) DEFAULT NULL,
-  `Open Hours` varchar(45) DEFAULT NULL,
-  `Turnaround Time` varchar(45) DEFAULT NULL,
-  `Phone` varchar(45) DEFAULT NULL,
-  `URL` varchar(45) DEFAULT NULL,
-  PRIMARY KEY (`Location ID`)
+  PRIMARY KEY (`City ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `testing location`
+-- Dumping data for table `city`
 --
 
-LOCK TABLES `testing location` WRITE;
-/*!40000 ALTER TABLE `testing location` DISABLE KEYS */;
-/*!40000 ALTER TABLE `testing location` ENABLE KEYS */;
+LOCK TABLES `city` WRITE;
+/*!40000 ALTER TABLE `city` DISABLE KEYS */;
+/*!40000 ALTER TABLE `city` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -54,4 +47,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-10-30 19:05:19
+-- Dump completed on 2020-10-30 19:05:18

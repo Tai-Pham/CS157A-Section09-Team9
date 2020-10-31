@@ -16,33 +16,27 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `testing location`
+-- Table structure for table `posts`
 --
 
-DROP TABLE IF EXISTS `testing location`;
+DROP TABLE IF EXISTS `posts`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `testing location` (
-  `Location ID` int NOT NULL,
-  `Address ID` int DEFAULT NULL,
-  `Name` varchar(45) DEFAULT NULL,
-  `Appointments` varchar(45) DEFAULT NULL,
-  `Drive Through` varchar(45) DEFAULT NULL,
-  `Open Hours` varchar(45) DEFAULT NULL,
-  `Turnaround Time` varchar(45) DEFAULT NULL,
-  `Phone` varchar(45) DEFAULT NULL,
-  `URL` varchar(45) DEFAULT NULL,
-  PRIMARY KEY (`Location ID`)
+CREATE TABLE `posts` (
+  `Account ID` int NOT NULL,
+  `Post ID` int DEFAULT NULL,
+  `Timestamp` date DEFAULT NULL,
+  PRIMARY KEY (`Account ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `testing location`
+-- Dumping data for table `posts`
 --
 
-LOCK TABLES `testing location` WRITE;
-/*!40000 ALTER TABLE `testing location` DISABLE KEYS */;
-/*!40000 ALTER TABLE `testing location` ENABLE KEYS */;
+LOCK TABLES `posts` WRITE;
+/*!40000 ALTER TABLE `posts` DISABLE KEYS */;
+/*!40000 ALTER TABLE `posts` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
