@@ -37,7 +37,7 @@ CREATE TABLE `post` (
 
 LOCK TABLES `post` WRITE;
 /*!40000 ALTER TABLE `post` DISABLE KEYS */;
-INSERT INTO `post` VALUES (1,'2020-10-30','test body',NULL),(2,'2020-10-30','test body',NULL),(3,'2020-10-30','test body',NULL),(4,'2020-10-30','test body',NULL),(5,'2020-10-30','test body',NULL),(6,'2020-10-30','test body',NULL),(7,'2020-10-30','test body',NULL),(8,'2020-10-30','test body',NULL),(9,'2020-10-30','test body',NULL),(10,'2020-10-30','test body',NULL),(11,'2020-10-30','test body',NULL),(12,'2020-10-30','test body',NULL),(13,'2020-10-30','test body',NULL),(14,'2020-10-30','test body',NULL),(15,'2020-10-30','test body',NULL);
+INSERT INTO `post` VALUES (1,'2020-10-30','test body',1),(2,'2020-10-30','test body',2),(3,'2020-10-30','test body',3),(4,'2020-10-30','test body',4),(5,'2020-10-30','test body',5),(6,'2020-10-30','test body',6),(7,'2020-10-30','test body',7),(8,'2020-10-30','test body',8),(9,'2020-10-30','test body',9),(10,'2020-10-30','test body',10),(11,'2020-10-30','test body',11),(12,'2020-10-30','test body',12),(13,'2020-10-30','test body',13),(14,'2020-10-30','test body',14),(15,'2020-10-30','test body',15);
 /*!40000 ALTER TABLE `post` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -50,4 +50,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-10-30 21:25:23
+-- Dump completed on 2020-10-30 21:50:02
