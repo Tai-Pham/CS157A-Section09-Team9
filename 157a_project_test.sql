@@ -24,8 +24,8 @@ DROP TABLE IF EXISTS `test`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `test` (
   `Test ID` int NOT NULL AUTO_INCREMENT,
-  `Tester ID` varchar(45) DEFAULT NULL,
-  `Email` varchar(45) DEFAULT NULL,
+  `Tester Email` varchar(45) DEFAULT NULL,
+  `Client Email` varchar(45) DEFAULT NULL,
   `Date Processed` date DEFAULT NULL,
   `Date Tested` date DEFAULT NULL,
   `Result` varchar(45) DEFAULT NULL,
