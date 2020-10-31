@@ -26,7 +26,7 @@ CREATE TABLE `address` (
   `Address ID` int NOT NULL AUTO_INCREMENT,
   `City ID` varchar(45) DEFAULT NULL,
   `State ID` varchar(45) DEFAULT NULL,
-  `Address` varchar(45) DEFAULT NULL,
+  `Address` varchar(100) DEFAULT NULL,
   `Zip Code` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`Address ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
