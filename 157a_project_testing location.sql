@@ -23,7 +23,7 @@ DROP TABLE IF EXISTS `testing location`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `testing location` (
-  `Location ID` int NOT NULL,
+  `Location ID` int NOT NULL AUTO_INCREMENT,
   `Address ID` int DEFAULT NULL,
   `Name` varchar(45) DEFAULT NULL,
   `Appointments` varchar(45) DEFAULT NULL,
