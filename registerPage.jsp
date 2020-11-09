@@ -75,13 +75,41 @@ Type
                 String user; // assumes database name is the same as username
                 user = "root";
                 String password = "liangjiachang";
+                String dbUsername = "";
+                String dbEmail = "";
 
                 try {
                     java.sql.Connection con; 
                     Class.forName("com.mysql.jdbc.Driver"); 
                     con = DriverManager.getConnection("jdbc:mysql://localhost:3306/"+db,user, password);
-                                
+
                     Statement stmt = con.createStatement();
+                    ResultSet rs = stmt.executeQuery("SELECT Username FROM 157a_project.`account` WHERE Username LIKE '"+username+"'");
+
+                    while (rs.next()) {
+                        dbUsername = rs.getString(1);
+                    }
+
+                    stmt = con.createStatement();
+                    rs = stmt.executeQuery("SELECT Email FROM 157a_project.`account` WHERE Email LIKE '"+email+"'");
+
+                    while (rs.next()) {
+                        dbEmail = rs.getString(1);
+                    }
+
+                    if (dbUsername.equals(username))
+                    {
+                        out.println("Username is taken.");
+                    }
+                    else if (dbEmail.equals(email))
+                    {
+                        out.println("Email is taken.");
+                    }
+                    else
+                    {
+                        stmt = con.createStatement();
+                        int i = stmt.executeUpdate("INSERT INTO 157a_project.`account`(Email, Username, Password) values('"+email+"', '"+username+"', '"+pass+"')");
+                    }
                     
                 } catch(SQLException e) {
                     out.println("SQLException caught: " + e.getMessage());
