@@ -4,6 +4,7 @@ pageEncoding="UTF-8"%>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 <style>
 body {text-align: center;}
+input{margin-bottom:50px;}
 </style>
 <html>
     <head>
@@ -21,10 +22,10 @@ Username
 <input type='text' name='username' style="height:50px; width:300px; font-size:25px;">
 Password
 <input type = 'password' name = 'password' style="height:50px; width:300px; font-size:25px;">
-
 <input type = 'submit' value = "Login" name = "loginButton" style="height:70px; width:150px; font-size:25px;">
-
-<input type = 'submit' value = 'Register' name = 'registerButton' style="height:70px; width:150px; font-size:25px;">
+<input type = 'submit' value = 'Register Admin' name = 'registerButtonAdmin' style="height:70px; width:250px; font-size:25px;">
+<input type = 'submit' value = 'Register Client' name = 'registerButtonClient' style="height:70px; width:250px; font-size:25px;">
+<input type = 'submit' value = 'Register Tester' name = 'registerButtonTester' style="height:70px; width:250px; font-size:25px;">
 </pre>
 </form>
     </body>
@@ -85,9 +86,21 @@ Password
 %>
 
 <%
-    String register = request.getParameter("registerButton");
-    if("Register".equals(register))
+    String registerAdmin = request.getParameter("registerButtonAdmin");
+    if("Register Admin".equals(registerAdmin))
     {
-        response.sendRedirect("http://localhost:8080/registerPage.jsp");
+        response.sendRedirect("http://localhost:8080/registerPageAdmin.jsp");
+    }
+
+    String registerTester = request.getParameter("registerButtonTester");
+    if("Register Tester".equals(registerTester))
+    {
+        response.sendRedirect("http://localhost:8080/registerPageTester.jsp");
+    }
+
+    String registerClient = request.getParameter("registerButtonClient");
+    if("Register Client".equals(registerClient))
+    {
+        response.sendRedirect("http://localhost:8080/registerPageClient.jsp");
     }
 %>
