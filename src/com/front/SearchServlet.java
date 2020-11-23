@@ -14,7 +14,7 @@ public class SearchServlet extends HttpServlet{
 	public void doGet(HttpServletRequest req, HttpServletResponse res) {
 		
 		String user = "root";
-		String password = "BasedData420";
+		String password = "";
 		
 		try {
 			java.sql.Connection con; 
