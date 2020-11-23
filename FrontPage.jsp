@@ -211,7 +211,7 @@ pageEncoding="UTF-8"%>
 				String db = "cs157a_project";
 				String user; // assumes database name is the same as username
 				user = "root";
-				String password = "BasedData420";
+				String password = "";
 	        
 				String[] address = null;			
 				try {
